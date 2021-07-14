@@ -1,7 +1,9 @@
+import VoltarHome from '../VoltarHome'
+
 export default function Login() {
   return (
     <div>
-      <div> ↩ Página principal</div>
+      <VoltarHome />
       <forms>
         <label>E-mail</label>
         <input type="text" />
