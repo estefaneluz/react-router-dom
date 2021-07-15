@@ -1,3 +1,5 @@
+import './style.css'
+
 export default function VoltarHome() {
-  return <button> ↩ Página principal</button>
+  return <button className="voltar-home"> ↩ Página principal</button>
 }
