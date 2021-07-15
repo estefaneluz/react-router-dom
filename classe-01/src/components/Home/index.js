@@ -4,12 +4,12 @@ import './style.css'
 export default function Home() {
   return (
     <div className="container home">
-      <button>
-        <Link to="/profile">Profile</Link>
-      </button>
-      <button>
-        <Link to="/login">Login</Link>
-      </button>
+      <Link to="/profile">
+        <button>Profile</button>
+      </Link>
+      <Link to="/login">
+        <button>Login</button>
+      </Link>
     </div>
   )
 }
