@@ -1,0 +1,22 @@
+.login-container {
+  width: 50%;
+  margin: 10vh 3vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  row-gap: 10px;
+}
+
+form button {
+  width: 150px;
+  align-self: flex-end;
+  height: 30px;
+}
+
+form input {
+  height: 30px;
+  padding: 5px;
+}
