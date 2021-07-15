@@ -1,6 +1,7 @@
 import './App.css'
 import Login from './components/Login'
 import Profile from './components/Profile'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -8,16 +9,18 @@ function App() {
       <nav>
         <ul>
           <li>
-            <a href="#">Profile</a>
+            <a href="/profile">Profile</a>
           </li>
           <li>
-            <a href="#">Login</a>
+            <a href="/login">Login</a>
           </li>
         </ul>
       </nav>
       <main>
-        <Login />
-        <Profile />
+        <Router>
+          <Route path="/login" component={Login} />
+          <Route path="/profile" component={Profile} />
+        </Router>
       </main>
     </div>
   )
