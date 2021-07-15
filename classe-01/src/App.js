@@ -5,8 +5,16 @@ import Profile from './components/Profile'
 function App() {
   return (
     <div className="app">
-      <Login />
-      <Profile />
+      <nav>
+        <ul>
+          <li>Profile</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+      <main>
+        <Login />
+        <Profile />
+      </main>
     </div>
   )
 }
