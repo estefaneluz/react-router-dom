@@ -7,8 +7,12 @@ function App() {
     <div className="app">
       <nav>
         <ul>
-          <li>Profile</li>
-          <li>Login</li>
+          <li>
+            <a href="#">Profile</a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
         </ul>
       </nav>
       <main>
