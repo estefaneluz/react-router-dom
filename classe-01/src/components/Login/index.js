@@ -3,7 +3,7 @@ import './style.css'
 
 export default function Login() {
   return (
-    <div className="login-container">
+    <div className="container">
       <VoltarHome className="btn-voltar" />
       <form>
         <label>E-mail</label>

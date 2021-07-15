@@ -1,10 +1,11 @@
 import VoltarHome from '../VoltarHome'
+import './style.css'
 
 export default function Profile() {
   return (
-    <div>
+    <div className="container">
       <VoltarHome />
-      <div>Seja bem vindo!</div>
+      <h1>Seja bem vindo(a)! </h1>
     </div>
   )
 }
