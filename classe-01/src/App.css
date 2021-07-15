@@ -5,10 +5,12 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: url('./assets/Designer.png') right center / 50% no-repeat #ecf4fd;
-  /* background-size: 200px 200px; */
+  display: grid;
+  align-items: center;
 }
+
 nav {
   display: grid;
   place-content: center end;
@@ -24,7 +26,8 @@ nav ul {
   font-size: 1.3em;
 }
 
+
 .container {
   width: 50%;
-  margin: 10vh 3vw;
+  padding: 10vh 3vw;
 }

@@ -1,0 +1,11 @@
+.home {
+  display: grid;
+  gap: 20px;
+}
+
+.home button {
+  font-size: 1em;
+  min-width: 130px;
+  width: 30%;
+  padding: 10px;
+}

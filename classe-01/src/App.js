@@ -1,6 +1,8 @@
 import './App.css'
 import Login from './components/Login'
 import Profile from './components/Profile'
+import Home from './components/Home'
+
 // import { useState } from 'react'
 
 import {
@@ -12,7 +14,7 @@ import {
 } from 'react-router-dom'
 
 function RotasProtegidas({ logged, children }) {
-  return <Route render={() => logged ? children : <Redirect to="/login" />} />
+  return <Route render={() => (logged ? children : <Redirect to="/login" />)} />
 }
 
 function App() {
@@ -22,24 +24,15 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-        <Route exact path="/">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/profile">Profile</Link>
-              </li>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-            </ul>
-          </nav>
-        </Route>
-        <main>
-          <Route path="/login" component={Login} />
-          <RotasProtegidas logged={logged}>
-            <Route path="/profile" component={Profile} />
-          </RotasProtegidas>
-        </main>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <main>
+            <Route path="/login" component={Login} />
+            <RotasProtegidas logged={logged}>
+              <Route path="/profile" component={Profile} />
+            </RotasProtegidas>
+          </main>
         </Switch>
       </Router>
     </div>
